@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview-Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> 
+
+    <div class="resume-container">
+        <div class="resume">
+            
+            <h2>Resume</h2>
+            
+            <p>Name: Kamsiriochi Richard
+                <br>
+               Email: kamsirichard1960@gmail.com
+               <br>
+               Number: +234 809 431 5174
+               <br>
+               I am a fast learner and dedicated hard worker, always willing and ready to take risks to become a better developer.
+              <br> <strong>Personal Details:</strong>
+               Currently Employed: No
+               
+               Date of Birth: 2006-04-02
+               
+               Highest Level of Education: Undergraduate
+               
+               Industry: Software Development
+               
+               NYSC Status: Not Applicable
+               
+               <strong>Education</strong>
+               <br>
+               Bachelors Degree in Software Engineering
+               <br>
+               Leadcity University - Oyo
+               <br>
+               September 2023 to Present
+               <br>
+               Diploma in Software Engineering
+               <br>
+               Aptech Computer Education - Lagos
+               <br>
+               October 2022 to Present
+               <br>
+               High School in Engineering Science
+               <br>
+               Tendertouch College - Lagos
+               <br>
+               September 2020 to June 2022
+               <br>
+              <strong>Skills</strong> 
+              <br>
+               • app development (Less than 1 year)
+               <br>
+               • web development (1 year)
+               <br>
+               Links
+               https://github.com/kamsirichard
+               <br>
+              <strong>Awards</strong> 
+              <br>
+               Best Performing Prefect - June 2022
+               <br>
+               The best-performing prefect award of the 2021/2022 academic session is given to prefects who had the most impact during their time as office holders.
+              <br> Best Data Processing Student - June 2022
+              <br>
+               This award was given to me for being the overall highest in the school's final exams.
+            </p>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/1671919197941.jpg" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <img src="images/1672182525199.jpg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="images/IMG_20230115_114928_635_transcpr.jpg" alt="Slide 3">
+            </div>
+            <div class="slide fade">
+                <img src="images/IMG_20230819_153659_248.jpg" alt="Slide 4">
+            </div>
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2023-08-07 at 23.51.15.jpg" alt="Slide 5">
+            </div>
+        </div>
+    </div>
+<script>
+    // Add this script in the <script> tag in your HTML file
+let slideIndex = 0;
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+}
+
+document.addEventListener("DOMContentLoaded", showSlides);
+
+</script>
+</body>
+</html>

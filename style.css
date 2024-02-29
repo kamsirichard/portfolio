@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    overflow: hidden;
+}
+
+body {
+    background-color: #f0f0f0; /* Set a light background color for the entire body */
+    display: flex; /* Use flexbox to create a horizontal layout */
+}
+
+.wrapper {
+    width: 50%; /* Set the width of the first column */
+    height: 100vh; /* Set the height to full viewport height */
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(2, 0, .6, 1) 0%, rgb(97, 14, 79) 35%, rgb(161, 6, 143) 100%);
+}
+
+.box {
+    width: 100%; /* Make the box take the full width of the purple section */
+    height: 100%; /* Make the box take the full height of the purple section */
+    position: relative; /* Position the box relative to its container */
+}
+
+.box div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5) {
+    top: 67%;
+    left: 60%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.resume-container {
+    width: 50%; /* Set the width of the second column */
+    height: 100vh; /* Set the height to full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.resume {
+    color: #000000; /* Set a text color for the second column */
+}
+
+.resume p {
+    line-height: 1.5; /* Set line height for better readability */
+}
+.slideshow-container {
+    width: 100%; /* Make the slideshow take the full width of the container */
+    max-height: 400px; /* Set a maximum height for the slideshow */
+    overflow: hidden;
+    margin-top: 20px; /* Add some spacing between the resume and slideshow */
+}
+
+.slide {
+    display: none; /* Hide slides by default */
+}
+
+img {
+    width: 40%; 
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .wrapper,
+    .resume-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .box div {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slideshow-container {
+        max-height: 300px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
